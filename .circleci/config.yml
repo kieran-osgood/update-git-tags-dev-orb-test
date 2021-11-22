@@ -17,4 +17,3 @@ workflows:
     jobs:
       - ko/run:
           version-tag-prefix: "test"
-

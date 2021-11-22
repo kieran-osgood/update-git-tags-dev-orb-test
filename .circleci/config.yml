@@ -16,4 +16,5 @@ workflows:
   say-hello-workflow:
     jobs:
       - ko/run:
-          version-tag-prefix: "test"
+          context: orb-publishing
+          repository-url: $REPOSITORY_URL

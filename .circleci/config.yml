@@ -1,17 +1,6 @@
 version: 2.1
 orbs:
     ko: kieran-osgood/update-git-tags-orb@dev:alpha
-
-jobs:
-  say-hello:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
-      - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
-
 workflows:
   say-hello-workflow:
     jobs:
